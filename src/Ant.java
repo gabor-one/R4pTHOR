@@ -30,9 +30,17 @@ public class Ant extends GameObject {
 		for(Cluster cl : neighbourClusters)
 		{
 			cl.GetGameObjects();
+			new AntScent(neighbourClusters,2).getScentLevel();
+			new FoodScent().getScentLevel();
 			
-		
 		}
+		
+		neighbourClusters.get(0).AddGameObject(this);
+		ParentCluster.RemoveGameObject(this);
+		
+		neighbourClusters.get(0).GetGameObjects();
+		neighbourClusters.get(0).RemoveGameObject(this);
+		
 		
 	}
 	

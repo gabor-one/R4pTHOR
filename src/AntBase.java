@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class AntBase extends GameObject {
 
 	private static int SpawnInterval;
@@ -25,8 +27,10 @@ public class AntBase extends GameObject {
 		throw new UnsupportedOperationException();
 	}
 	
-	public void Update(Cluster[] neighbourClusters, Cluster ParentCluster)
+	public  void Update(ArrayList<Cluster> neighbourClusters, Cluster ParentCluster) 
 	{
+		
+	
 		throw new UnsupportedOperationException();
 	}
 	

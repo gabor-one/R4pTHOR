@@ -12,6 +12,7 @@ public class Cluster {
 
 	public Cluster() {
 		System.out.println(">Cluster.CTOR");
+		gameObjects = new ArrayList<GameObject>();
 	}
 
 	public ArrayList<Cluster> GetNeighbourClusters() {
@@ -31,6 +32,12 @@ public class Cluster {
 	 * @param GameO
 	 */
 	public void RemoveGameObject(GameObject GameO) {
+		
+	
+		
+		gameObjects.remove(GameO);
+		
+		
 		System.out.println(">Cluster.RemoveGameObject");
 		
 	
@@ -41,7 +48,8 @@ public class Cluster {
 	 * @param GameO
 	 */
 	public boolean AddGameObject(GameObject GameO) {
-		throw new UnsupportedOperationException();
+		System.out.println(">Cluster.AddGameObject");
+		return true;
 	}
 
 	public UUID getGuid() {

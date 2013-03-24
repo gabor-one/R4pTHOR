@@ -1,5 +1,7 @@
+import java.util.ArrayList;
+
 public class AntSpawner extends GameObject {
-	public void Update(Cluster[] neighbourClusters, Cluster ParentCluster)
+	public  void Update(ArrayList<Cluster> neighbourClusters, Cluster ParentCluster)
 	{
 		throw new UnsupportedOperationException();
 	}

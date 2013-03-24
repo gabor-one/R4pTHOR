@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Storage extends GameObject {
 
 	private int foodCount;
@@ -19,7 +21,7 @@ public class Storage extends GameObject {
 		throw new UnsupportedOperationException();
 	}
 	
-	public void Update(Cluster[] neighbourClusters, Cluster ParentCluster)
+	public  void Update(ArrayList<Cluster> neighbourClusters, Cluster ParentCluster)
 	{
 		throw new UnsupportedOperationException();
 	}

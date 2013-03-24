@@ -1,9 +1,11 @@
+import java.util.ArrayList;
+
 public class AntCatcher extends GameObject {
 
 	public AntCatcher() {
 		throw new UnsupportedOperationException();
 	}
-	public void Update(Cluster[] neighbourClusters, Cluster ParentCluster)
+	public  void Update(ArrayList<Cluster> neighbourClusters, Cluster ParentCluster)
 	{
 		throw new UnsupportedOperationException();
 	}

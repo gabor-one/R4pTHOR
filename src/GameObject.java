@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.UUID;
 
 public abstract class GameObject {
@@ -9,7 +10,7 @@ public abstract class GameObject {
 	 * @param neighbourClusters
 	 * @param ParentCluster
 	 */
-	public abstract void Update(Cluster[] neighbourClusters, Cluster ParentCluster);
+	public abstract void Update(ArrayList<Cluster> neighbourClusters, Cluster ParentCluster);
 
 	public abstract void Draw();
 

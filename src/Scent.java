@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Scent extends GameObject {
 
 	private float ScentLevel;
@@ -16,14 +18,14 @@ public class Scent extends GameObject {
 	 */
 	public void setScentLevel(float Sl) {
 		System.out.println(">Scent.setScentLevel");
-		ScentLevel=Sl;
+	
 	}
 
 	public void decScentLevel() {
-		throw new UnsupportedOperationException();
+		System.out.println(">Scent.decScentLevel");
 	}
 	
-	public void Update(Cluster[] neighbourClusters, Cluster ParentCluster)
+	public  void Update(ArrayList<Cluster> neighbourClusters, Cluster ParentCluster)
 	{
 		throw new UnsupportedOperationException();
 	}
