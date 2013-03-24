@@ -7,15 +7,16 @@ public class Scent extends GameObject {
 	}
 
 	public float getScentLevel() {
-		throw new UnsupportedOperationException();
+		return ScentLevel;
 	}
 
 	/**
 	 * 
 	 * @param ScentLevel
 	 */
-	public void setScentLevel(float ScentLevel) {
-		throw new UnsupportedOperationException();
+	public void setScentLevel(float Sl) {
+		System.out.println(">Scent.setScentLevel");
+		ScentLevel=Sl;
 	}
 
 	public void decScentLevel() {

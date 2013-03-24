@@ -6,7 +6,8 @@ public class InGameState extends GameState {
 	private AntBase antbase;
 
 	public InGameState() {
-		throw new UnsupportedOperationException();
+		System.out.println(">InGameState.CTOR");
+		cluster = MapGenerator.GenerateMap();
 	}
 
 }

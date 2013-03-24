@@ -1,21 +1,25 @@
+import java.awt.List;
+import java.util.ArrayList;
 import java.util.UUID;
 
 public class Cluster {
 
-	private Cluster[] neighbourClusters;
-	private GameObject[] gameObjects;
+	private ArrayList<Cluster> neighbourClusters;
+	
+	
+	private ArrayList<GameObject> gameObjects;
 	private UUID guid;
 
 	public Cluster() {
-		throw new UnsupportedOperationException();
+		System.out.println(">Cluster.CTOR");
 	}
 
-	public Cluster[] GetNeighbourClusters() {
+	public ArrayList<Cluster> GetNeighbourClusters() {
 		throw new UnsupportedOperationException();
 	}
 
 	/**
-	 * 
+	 * 0
 	 * @param cluster
 	 */
 	public void AddNeighbourClusters(Cluster cluster) {
@@ -27,7 +31,9 @@ public class Cluster {
 	 * @param GameO
 	 */
 	public void RemoveGameObject(GameObject GameO) {
-		throw new UnsupportedOperationException();
+		System.out.println(">Cluster.RemoveGameObject");
+		
+	
 	}
 
 	/**

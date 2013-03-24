@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Ant extends GameObject {
 
 	private boolean HasFood;
@@ -22,9 +24,16 @@ public class Ant extends GameObject {
 		throw new UnsupportedOperationException();
 	}
 	
-	public void Update(Cluster[] neighbourClusters, Cluster ParentCluster)
+	public void Update(ArrayList<Cluster> neighbourClusters, Cluster ParentCluster)
 	{
-		throw new UnsupportedOperationException();
+		System.out.println(">Ant.Update");
+		for(Cluster cl : neighbourClusters)
+		{
+			cl.GetGameObjects();
+			
+		
+		}
+		
 	}
 	
 	public void Draw()

@@ -15,7 +15,9 @@ public class GameManager {
 	 * Main loop.
 	 */
 	void Run() {
-		System.out.println("Z4qqqbatman");
+		System.out.println(">GameManager.Run");
+		gameState = new InGameState();
+		
 		return;
 		
 	}
